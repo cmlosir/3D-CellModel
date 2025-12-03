@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cell Comparison: Animal vs. Plant</title>
+    <style>
+        /* --- General Page Styles --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32; /* Plant green mixed with academic blue */
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* --- Main Layout --- */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* --- Model Card Style --- */
+        /* This creates a white box around each model */
+        .model-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 50px; /* Space between the two models */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .model-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .model-desc {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* --- Sketchfab Viewer Styling --- */
+        .sketchfab-embed-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .sketchfab-embed-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Styling the credit links */
+        .credits {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 10px;
+            text-align: right;
+        }
+        .credits a { color: #2e7d32; text-decoration: none; }
+
+        /* --- Instructions Box --- */
+        .instructions-box {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            color: #2e7d32;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 0.9rem;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cell Structure Models</h1>
+        <p>Interactive Comparison: Animal Cell vs. Plant Cell</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Navigation Instructions -->
+        <div class="instructions-box">
+            <strong>👨‍🎓 Student Tip:</strong> Use your mouse to rotate the models. 
+            Look for the <em>Cell Wall</em> and <em>Chloroplasts</em> in the Plant cell 
+            to see how it differs from the Animal cell.
+        </div>
+
+        <!-- ========================================= -->
+        <!-- MODEL 1: ANIMAL CELL -->
+        <!-- ========================================= -->
+        <div class="model-card">
+            <h2 class="model-title">1. The Animal Cell (Eukaryotic)</h2>
+            <p class="model-desc">
+                An animal cell is a type of eukaryotic cell that lacks a cell wall. 
+                Notice the flexible membrane and the variety of organelles like the Mitochondria and Nucleus.
+            </p>
+
+            <div class="sketchfab-embed-wrapper">
+                <!-- Animal Cell Embed Code -->
+                <iframe title="Eukaryotic Cell" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b7d84e5f2d5e411fbb195ab2742f2256/embed"></iframe>
+            </div>
+            
+            <div class="credits">
+                Model: <a href="https://sketchfab.com/3d-models/eukaryotic-cell-b7d84e5f2d5e411fbb195ab2742f2256" target="_blank">Eukaryotic Cell</a> by SGU MedArt
+            </div>
+        </div>
+
+
+        <!-- ========================================= -->
+        <!-- MODEL 2: PLANT CELL -->
+        <!-- ========================================= -->
+        <div class="model-card">
+            <h2 class="model-title">2. The Plant Cell</h2>
+            <p class="model-desc">
+                Plant cells are also eukaryotic but distinct from animal cells. 
+                <strong>Look for:</strong> The rigid outer <em>Cell Wall</em> (which gives it a fixed shape) 
+                and the green <em>Chloroplasts</em> used for photosynthesis.
+            </p>
+
+            <div class="sketchfab-embed-wrapper">
+                <!-- Plant Cell Embed Code (New) -->
+                <iframe title="Plant Cell Structure" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/7d97843eeaf948c387f94f96342abe00/embed"> </iframe> 
+            </div>
+
+            <div class="credits">
+                Model: <a href="https://sketchfab.com/3d-models/plant-cell-structure-7d97843eeaf948c387f94f96342abe00" target="_blank">Plant Cell Structure</a> by appsnation
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>3D Models provided by Sketchfab. Presentation created for Biology Class.</p>
+    </footer>
+
+</body>
+</html>
